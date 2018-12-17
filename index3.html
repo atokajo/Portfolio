@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Atoka's Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="bg1">
+  	<div id="menu">
+		  <div class="item" id="nav">
+		  	<a href="#about">
+		  		<button class="dropbtn font">About</button>
+		  	</a>
+		  </div>
+		  <div class="item">
+		  	<a href="CV.pdf">
+		  		<button class="dropbtn font">CV</button>
+		  	</a>
+		  </div>
+		  <div class="dropdown item">
+		  	<button class="dropbtn font">My Projects</button>
+		  	<div class="dropdown-content">
+			    <a href="Homework/theHungryGames/index.html" class="font">30MFF Website</a>
+			    <a href="ComicProject/index.html" class="font">Comix Strip</a>
+			    <a href="http://lr1965.nyuad.im/index_sound_project.html" class="font">Sounds Like</a>
+			    <a href="VideoProject/index.html" class="font">VID-E-OH!!!</a>
+			    <a href="Homework/index.html" class="font">Documentation</a>
+			  </div>
+			</div>
+		</div>
+  	<h1 class = "fadeIn" id="name">Atoka Jo</h1>
+ 	</div>
+
+ <div class="bg2" id="about">
+ 	<h1 class = "fadeIn" id="heading">About</h1>
+ </div>
+
+<!-- 	<script src="js/script.js"></script> -->
+	<script src="lib/jquery-3.3.1.min.js"> </script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.localScroll.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		   $('#nav').localScroll({duration:800});
+		   $(".fadeIn").fadeIn(4000);
+		});
+	</script>
+
+	<!-- <script class="font">
+		$(document).ready(function(){
+		    $(".fadeIn").fadeIn(4000);
+		});
+
+		$(document).ready(function() {
+			$('#nav').localScroll({duration:800});
+			target:'#about'
+		});
+	</script> -->
+
+</body>
+
+</html>
